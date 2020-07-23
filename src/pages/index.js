@@ -9,16 +9,17 @@ class IndexPost extends React.Component {
   render() {
 
     const { data } = this.props;
-
+    console.log(data)
     return (
       <React.Fragment>
         <div className="row product-main">
-          {data.data.allProduct.edges.map(items => (
-            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
+          {data.data.allProduct.edges.map(item => (
+            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={item.node.id}>
+              <Link to={`/${item.node.slug}`}>
               <div className="details_List">
 
-                  { items.node.productImage && items.node.productImage[0] ? <Img sizes={{
-                      "src": `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${items.node.productImage[0].id}.${items.node.productImage[0].extension}`,
+                  { item.node.productImage && item.node.productImage[0] ? <Img sizes={{
+                      "src": `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${item.node.productImage[0].id}.${item.node.productImage[0].extension}`,
                       "aspectRatio": 1.77,
                       "sizes": '',
                       "srcSet": ''
@@ -28,20 +29,20 @@ class IndexPost extends React.Component {
                   <div className="details_inner">
 
                   <h2>
-                    <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
+                    {item.node.name}
                   </h2>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                      <span className="price">${items.node.price}</span>
+                      <span className="price">${item.node.price}</span>
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
                       <a
                         href="/"
                         className="Product snipcart-add-item"
-                        data-item-id={items.node.slug}
-                        data-item-price={items.node.price}
-                        data-item-image={items.node.productImage && items.node.productImage[0] ? `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${items.node.productImage[0].id}.${items.node.productImage[0].extension}` : ""}
-                        data-item-name={items.node.name}
+                        data-item-id={item.node.slug}
+                        data-item-price={item.node.price}
+                        data-item-image={item.node.productImage && item.node.productImage[0] ? `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${item.node.productImage[0].id}.${item.node.productImage[0].extension}` : ""}
+                        data-item-name={item.node.name}
                         data-item-url={`/`}
                       >
                         <i className="fas fa-shopping-bag" />Add to Cart
@@ -50,6 +51,7 @@ class IndexPost extends React.Component {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
           ))}
         </div>
