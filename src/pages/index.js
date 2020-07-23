@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 class IndexPost extends React.Component {
   render() {
     const { data } = this.props
-    console.log(data)
     return (
       <React.Fragment>
         <div className="row product-main">
