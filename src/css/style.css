@@ -41,7 +41,7 @@ footer.site-footer *{color:#fff;}
 .snip-layout .snip-actions a.snip-btn{background:#333!important;color:#fff!important;}
 .snip-layout .snip-actions a.snip-btn:hover{background:#4DB58E!important;}
 .product-details  .gatsby-image-wrapper{margin-bottom:30px;}
-span.price{font-weight:bold;font-size:30px;}
+span.price{font-weight:bold;font-size:30px;color:#333;}
 .Product-Screenshot ul.react-tabs__tab-list{list-style:none;margin:0;top:0;right:0;height:100%;bottom:0;padding:0;display:flex;justify-content:center;flex-direction:row;text-align:center;}
 .Product-Screenshot ul.react-tabs__tab-list li{width:190px;cursor:pointer;margin:0 5px;}
 .Product-Screenshot li{list-style:none;}
