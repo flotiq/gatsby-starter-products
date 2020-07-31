@@ -62,8 +62,10 @@ Screenshot
     If you wish to import example products to your account, before running `gatsby develop` run:
       
     ```sh
-    node ./.flotiq/importExample.js
+    npm import
     ```
+    
+    As `Flotiq api key` put your Read and write API KEY, and as `Project directory path` put `.` 
     
     It will add 10 images and 4 products to your Flotiq account.
     
