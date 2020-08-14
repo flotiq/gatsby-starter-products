@@ -44,7 +44,6 @@ Screenshot
    You need to create a file called `.env` inside the root of the directory, with the following structure:
 
    ```
-   GATSBY_FLOTIQ_BASE_URL=https://api.flotiq.com
    GATSBY_FLOTIQ_API_KEY=YOUR FLOTIQ API KEY
    SNIPCART_API_KEY=YOUR SNIPCART PUBLIC API KEY
    ```
