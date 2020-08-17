@@ -20,7 +20,7 @@ class IndexPost extends React.Component {
                   {item.node.productImage && item.node.productImage[0] ? (
                     <Img
                       sizes={{
-                        src: `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${item.node.productImage[0].id}.${item.node.productImage[0].extension}`,
+                        src: `https://api.flotiq.com/image/1920x0/${item.node.productImage[0].id}.${item.node.productImage[0].extension}`,
                         aspectRatio: 1.77,
                         sizes: "",
                         srcSet: "",
@@ -44,7 +44,7 @@ class IndexPost extends React.Component {
                           data-item-price={item.node.price}
                           data-item-image={
                             item.node.productImage && item.node.productImage[0]
-                              ? `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${item.node.productImage[0].id}.${item.node.productImage[0].extension}`
+                              ? `https://api.flotiq.com/image/1920x0/${item.node.productImage[0].id}.${item.node.productImage[0].extension}`
                               : ""
                           }
                           data-item-name={item.node.name}
