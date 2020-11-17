@@ -18,7 +18,7 @@ const ProductDetails = data => (
                 <TabPanel key={items.id}>
                   <Tab><img
                       alt={data.data.product.name}
-                      src={`${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${items.id}.${items.extension}`} /></Tab>
+                      src={`https://api.flotiq.com/image/1920x0/${items.id}.${items.extension}`} /></Tab>
                 </TabPanel>
               ))}
               <TabList>
@@ -26,7 +26,7 @@ const ProductDetails = data => (
                   <Tab key={items.id}>
                     <img
                         alt={data.data.product.name}
-                        src={`${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${items.id}.${items.extension}`} />
+                        src={`https://api.flotiq.com/image/1920x0/${items.id}.${items.extension}`} />
                   </Tab>
                 ))}
               </TabList>
