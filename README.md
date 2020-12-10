@@ -69,7 +69,7 @@ Screenshot
    
     This step is optional and is not necessary if you used flotiq-cli to start the project.
       
-    If you wish to import example products to your account, install [flotiq-cli](https://github.com/flotiq/flotiq-cli), and run in project directory:
+    If you wish to import example products to your account, before running `gatsby develop`, install [flotiq-cli](https://github.com/flotiq/flotiq-cli), and run in project directory:
       
     ```sh
     flotiq import [flotiqApiKey] .
