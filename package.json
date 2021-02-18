@@ -17,7 +17,7 @@
     "gatsby-plugin-sharp": "^2.10.1",
     "gatsby-plugin-snipcart": "^1.1.2",
     "gatsby-source-filesystem": "^2.7.0",
-    "gatsby-source-flotiq": "^2.2.1",
+    "gatsby-source-flotiq": "^2.2.3",
     "gatsby-transformer-remark": "^2.12.0",
     "gatsby-transformer-sharp": "^2.8.0",
     "graphql": "^14.7.0",
