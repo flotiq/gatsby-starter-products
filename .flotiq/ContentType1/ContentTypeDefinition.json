@@ -16,6 +16,7 @@
           },
           "slug": {
             "type": "string",
+            "pattern": "^[a-zA-Z0-9-_]*$",
             "minLength": 1
           },
           "price": {
@@ -60,6 +61,7 @@
       "slug": {
         "label": "Slug",
         "inputType": "text",
+        "helpText": "Slug can only have alphanumerical characters, - and _",
         "unique": true
       },
       "price": {
